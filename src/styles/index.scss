@@ -1,6 +1,7 @@
-$primary-color: #ff0000;
+@use './base/variables' as *;
 
-body {
+html {
+  background-color: black;
   h1 {
     color: $primary-color;
   }
