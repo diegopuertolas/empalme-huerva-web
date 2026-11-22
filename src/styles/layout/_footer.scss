@@ -1,0 +1,60 @@
+@use '../base/variables' as *;
+
+.footer {
+  width: 100%;
+  border-top: 2px solid $secondary-color; 
+  padding: 1rem;
+  margin-top: 1rem;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: $white-neutral-color; 
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+
+  &__icon {
+    width: $icon-size-base; 
+    height: $icon-size-base;
+  }
+
+  &__logo-liga {
+    height: $icon-size-base;
+    width: auto;
+    object-fit: contain;
+    border-radius: 4px;
+  }
+
+  &__copyright {
+    font-family: $body-text-font;
+    font-size: 1rem;
+    color: $white-neutral-color;
+    text-align: center;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    padding: 2.5rem 2rem;
+
+    &__container {
+      flex-direction: row-reverse; 
+      justify-content: space-around;
+    }
+  }
+}
