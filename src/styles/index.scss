@@ -1,8 +1,11 @@
 @use './base/variables' as *;
 
-html {
-  background-color: black;
-  h1 {
-    color: $primary-color;
-  }
+@use './components/buttons' as *;
+
+@use './layout/header' as *;
+
+@use './pages/home' as *;
+
+body {
+  background-color: $primary-color;
 }
