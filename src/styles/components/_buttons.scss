@@ -1,0 +1,22 @@
+@use '../base/variables' as *;
+
+.btn {
+  align-items: center;
+  justify-content: center;
+
+  padding: 0.5rem;
+
+  background-color: $dark-grey-neutral-color;
+  
+  font-family: $title-font;
+  font-weight: $title-weight-bold;
+  font-size: $body-text-size;
+  text-decoration: none;
+
+  color: $secondary-color;
+
+  border-radius: 10px;
+  border: 3px solid $secondary-color;
+
+  box-shadow: 1px 0px 30px 10px rgba(255, 215, 0, 0.25);
+}

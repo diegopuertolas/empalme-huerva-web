@@ -1,0 +1,33 @@
+@use '../base/variables' as *;
+
+.club-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  padding: 0.5rem;
+
+  
+  &__header {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  &__motto {
+    font-family: $title-font;
+    font-weight: $title-weight-bold;
+    font-size: $title-h1-size;
+    color: $secondary-color;
+    padding: 0.75rem;
+
+    margin: 0;
+  }
+
+  &__description {
+    font-family: $body-text-font;
+    color: $white-neutral-color;
+    font-size: $title-h3-size;
+  }
+}
