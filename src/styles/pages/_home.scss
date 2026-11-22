@@ -87,3 +87,40 @@
     gap: 1.5rem;
   }
 }
+
+.last-result {
+  padding: 2rem;
+  max-width: 1000px;
+  margin-inline: auto;
+
+  &__title {
+    font-family: $title-font;
+    font-size: $title-h1-size;
+    color: $white-neutral-color;
+    
+    text-decoration-line: underline;
+    text-decoration-color: $secondary-color;
+
+    text-align: center;
+    margin: 1.5rem;
+  }
+
+  &__card {
+    display: block;
+    overflow: hidden;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    padding: 3rem;
+
+    &__title {
+      margin-bottom: 2.5rem;
+    }
+  }
+}
